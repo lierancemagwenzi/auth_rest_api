@@ -34,6 +34,20 @@ function getUser(id){
 return  null;
 }
 
+
+function validateData(data){
+    if(data.item!=null&&data.price!=null&&data.quantity!=null){
+
+        return true;
+    }
+    else{
+
+        return  false;
+    }
+
+}
+
+
 exports.CreateCart =(req,res)=> {
     let token = req.headers['access-token'];
 
@@ -52,6 +66,10 @@ exports.CreateCart =(req,res)=> {
 
         if(!getUser(decoded.id).permissions.create_cart){
             return res.status(505).json({"error":"Account has missing permissions"})
+        }
+
+        if(!validateData(req.body)){
+            return res.status(500).json({"error":"missing input values"})
         }
 
             console.log(decoded.id)
