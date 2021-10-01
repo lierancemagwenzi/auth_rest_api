@@ -1,0 +1,38 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "firebase-admin": "^9.11.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql-connection-pool-manager": "^1.5.9",
+    "mysql2": "^2.3.0",
+    "node-schedule": "^2.0.0",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "paynow": "^1.0.9",
+    "sequelize": "^6.6.5",
+    "short-uuid": "^4.1.0",
+    "twilio": "^3.63.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
