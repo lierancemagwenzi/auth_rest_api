@@ -3,8 +3,15 @@
 ## PORT =9001
 
 ## API URL=http://127.0.0.1:9001/api/{endpoint}
+## FIRST RUN NPM INSTALL
+
+##THE API USES JSON AS DB
 
 ## REGISTER A NEW USER
+
+
+
+
 
 POST http://127.0.0.1:9001/api/register
 
